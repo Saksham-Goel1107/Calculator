@@ -29,6 +29,16 @@ button {
   cursor: pointer;
 }
 
+button:hover{
+  background-color: rgb(200, 200, 200);
+  transform: scale(1.1);
+}
+
+button.clicked {
+  transform: scale(0.95);
+  transition: transform 0.1s;
+}
+
 .row {
   margin: 8px 0;
 }
