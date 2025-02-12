@@ -34,6 +34,8 @@ Array.from(buttons).forEach((button) => {
                 string = string + e.target.innerHTML;
                 document.querySelector('input').value = string;
             }
+            button.classList.add('clicked')
+            setTimeout(() => button.classList.remove('clicked'), 100);
         } catch (e) {
             string = "";
             document.querySelector('input').value = string;
