@@ -30,7 +30,12 @@ Array.from(buttons).forEach((button) => {
             else if (e.target.innerHTML == '√') {
                 string = Math.sqrt(parseFloat(string)).toString();
                 document.querySelector('input').value = string;
-            } else {
+            }
+            else if (e.target.innerHTML == '←') {
+                string = string.slice(0, -1); 
+                document.querySelector('input').value = string;
+            } 
+            else {
                 string = string + e.target.innerHTML;
                 document.querySelector('input').value = string;
             }
